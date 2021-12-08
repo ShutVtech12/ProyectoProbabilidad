@@ -75,7 +75,7 @@ int main()
 			cout << "--------------------------------------------------------------\n";
 			if (elementos > kgrupos)
 			{
-				cout << "         (" << elementos << ")       " << elementos << "!\n";
+				cout << "         (" << elementos << ")       " << elementos << "\n";
 				cout << "C(n,k) = ( ) = ---------\n";
 				cout << "         (" << kgrupos << ")   (" << elementos << "-" << kgrupos << ")! " << kgrupos << "!\n\n";
 
