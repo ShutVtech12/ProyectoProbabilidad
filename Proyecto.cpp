@@ -73,7 +73,7 @@ int main()
 			cout << "--------------------------------------------------------------\n";
 			if (elementos > kgrupos)
 			{
-				cout << "         (" << elementos << ")       " << elementos << "\n";
+				cout << "         (" << elementos << ")       " << elementos << "!\n";
 				cout << "C(n,k) = ( ) = ---------\n";
 				cout << "         (" << kgrupos << ")   (" << elementos << "-" << kgrupos << ")! " << kgrupos << "!\n\n";
 
@@ -93,7 +93,7 @@ int main()
 				resultado= resultado1/resultado5;
 
 
-				cout<<"         ("<<elementos<<")       "<<resultado1<<"!\n";
+				cout<<"         ("<<elementos<<")       "<<resultado1<<"\n";
 				cout<<"C(n,k) = ( ) = ---------\n";
 				cout<<"         ("<<kgrupos<<")   "<<resultado5<<"\n\n";
 
