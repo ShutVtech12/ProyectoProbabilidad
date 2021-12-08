@@ -23,7 +23,7 @@ int factorial(int n){
 }
 
 int main(){
-	int opc, reinicio, elementos, kgrupos, resultado, numero, suma, cantidad;
+	int opc, reinicio, elementos, kgrupos, resultado, numero, suma, cantidad, resultado1,resultado2, resultado3, elem;
 	char dec;
 	reinicio=0;
 	while(reinicio!=1){
@@ -123,9 +123,14 @@ int main(){
 				cout<<"         ("<<elementos<<"-"<<kgrupos<<")!\n\n";
 				
 				//AQUI SE HACEN LOS CALCULOS
-				cout<<"          "<</*RESULTADO DE n!*/0<<"\n";
+				elem = elementos;
+				resultado1 = factorial(elem);
+				resultado2= elementos - kgrupos;
+				resultado3= factorial(resultado2);
+				resultado= resultado1/resultado3;
+				cout<<"          "<<resultado1<<"\n";
 				cout<<"P(n,k) = -----\n";
-				cout<<"           "<</*RESULTADO DE (n-k)!*/0<<"\n\n";
+				cout<<"           "<<resultado3<<"\n\n";
 				cout<<"**************************************************************\n\n";
 				cout<<"Por lo tanto: \n";
 				//Se imprime el resultado final
