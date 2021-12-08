@@ -9,8 +9,6 @@
 
 //Prueba 3 git visual
 //Prueba 4
-//Prueba 5 xd
-
 using namespace std;
 
 int factorial(int n)
@@ -39,7 +37,7 @@ int factorial(int n)
 
 int main()
 {
-	int opc, reinicio, elementos, kgrupos, resultado, numero, suma, cantidad, resultado1, resultado2, resultado3, elem, resultado4, resultado5;
+	int opc, reinicio, elementos, kgrupos, resultado, numero, suma,mul, cantidad, resultado1, resultado2, resultado3, elem, resultado4, resultado5,aux;
 	char dec;
 	reinicio = 0;
 	while (reinicio != 1)
@@ -234,14 +232,26 @@ int main()
 					cout << ")!\n\n";
 
 					//AQUI SE HACEN LOS CALCULOS
-					cout << "               " << /*Resultado de n!*/ 0 << "\n";
-					cout << "PR(n) = ---------------\n";
-					cout << "        " << /*Resultado de la multiplicacion!*/ 0 << "\n\n";
 
+					resultado1=factorial(elementos);
+
+					mul=1;
+					for (int i = 0; i < cantidad; i++)
+				{
+					numero = nr[i];
+					aux=factorial(numero);
+					mul= mul * aux;
+				}
+					resultado2=resultado1/mul;
+
+
+					cout << "               " << /*Resultado de n!*/ resultado1 << "\n";
+					cout << "PR(n) = ---------------\n";
+					cout << "        " << /*Resultado de la multiplicacion!*/ mul << "\n\n";
 					cout << "**************************************************************\n\n";
 					cout << "Por lo tanto: \n";
 					//Se imprime el resultado final
-					cout << "PR(n) = " << resultado << "\n\n";
+					cout << "PR(n) = " << resultado2 << "\n\n";
 					cout << "**************************************************************\n";
 				}
 				else
