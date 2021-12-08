@@ -39,7 +39,7 @@ int factorial(int n)
 
 int main()
 {
-	int opc, reinicio, elementos, kgrupos, resultado, numero, suma, cantidad, resultado1, resultado2, resultado3, elem;
+	int opc, reinicio, elementos, kgrupos, resultado, numero, suma, cantidad, resultado1, resultado2, resultado3, elem, resultado4, resultado5;
 	char dec;
 	reinicio = 0;
 	while (reinicio != 1)
@@ -79,10 +79,25 @@ int main()
 				cout << "C(n,k) = ( ) = ---------\n";
 				cout << "         (" << kgrupos << ")   (" << elementos << "-" << kgrupos << ")! " << kgrupos << "!\n\n";
 
-				//Calculos del dividendo y del divisor
-				cout << "         (" << elementos << ")       " << /*Resultado de n!*/ 0 << "!\n";
-				cout << "C(n,k) = ( ) = ---------\n";
-				cout << "         (" << kgrupos << ")   " << /*Resultado de (n-k)! * k! */ 0 << "\n\n";
+				//Calculos del dividendo y del divisor---------------------------------------------Calculos aqui
+				
+
+				elem = elementos;
+				resultado1 = factorial(elem); //listo
+
+
+				resultado2= elementos - kgrupos;
+				resultado3= factorial(resultado2);
+				resultado4 = factorial(kgrupos);
+				resultado5 = resultado3*resultado4;
+
+
+				resultado= resultado1/resultado5;
+
+
+				cout<<"         ("<<elementos<<")       "<<resultado1<<"!\n";
+				cout<<"C(n,k) = ( ) = ---------\n";
+				cout<<"         ("<<kgrupos<<")   "<<resultado5<<"\n\n";
 
 				//Calculos finales, lo que seria de la division
 				cout << "**************************************************************\n\n";
