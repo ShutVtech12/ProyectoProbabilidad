@@ -193,7 +193,7 @@ int main()
 				cout << "Para permutaciones con repetecion tenemos la siguiente ecuacion\n";
 				cout << "              n!\n";
 				cout << "PR(n) = ---------------\n";
-				cout << "        (n1*n2*...*nr)!\n\n";
+				cout << "        (n1!*n2!*...*nr!)\n\n";
 				cout << "Donde: \n";
 				cout << "n = n1 + n2 + ... + nr\n\n";
 				cout << "Valor para n: ";
@@ -222,14 +222,14 @@ int main()
 					{
 						if (i == cantidad - 1)
 						{
-							cout << nr[i];
+							cout << nr[i]<<"!";
 						}
 						else
 						{
-							cout << nr[i] << "*";
+							cout << nr[i] << "!*";
 						}
 					}
-					cout << ")!\n\n";
+					cout << ")\n\n";
 
 					//AQUI SE HACEN LOS CALCULOS
 
